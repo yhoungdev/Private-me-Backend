@@ -1,0 +1,9 @@
+{
+  "name": "private-me",
+  "version": "1.0.0",
+  "description": "A privacy app for going icongnito",
+  "main": "index.js",
+  "repository": "git@github.com:yhoungdev/Private-me-Backend.git",
+  "author": "Sudo Whoam i <yhoungdev@gmail.com>",
+  "license": "MIT"
+}
