@@ -5,6 +5,8 @@ require('dotenv').config();
 
 
 
+
+
 const app = express();
 
 app.use(cors());
@@ -20,4 +22,4 @@ mongoose.connect( url , {
 .catch( error => console.log(error))
 
 //listen to server 
-app.listen( 3001 , ()=> console.log('listening on port 3001'))
+app.listen( 3002 , ()=> console.log('listening on port 3001'))
