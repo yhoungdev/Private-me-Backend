@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 
+
 //connect to mongo db
 const url = process.env.URL
 mongoose.connect( url , {
@@ -22,4 +23,4 @@ mongoose.connect( url , {
 .catch( error => console.log(error))
 
 //listen to server 
-app.listen( 3002 , ()=> console.log('listening on port 3001'))
+app.listen( 5000 , ()=> console.log('listening on port 5000'))
