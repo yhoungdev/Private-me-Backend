@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 
 const schema = new mongoose.Schema({
     content: {
-        type: String
-    }
+        type: String,
+        required: [true , 'Comment cant be empty']
+    },
 });
 
 
