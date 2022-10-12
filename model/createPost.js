@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 
-const schema = mongoose.schema;
+const schema = mongoose.Schema;
 
 const content = new schema({
-    post : String,
-    attatchment: String,
+    post : {
+        type: String,
+        required: [ true , 'required']
+    },
+    fileUrl: String,
+    
 });
 
-const post = mongoose.model('Content' , content);
-module.export =  post;
+const PostContent = mongoose.model('Content' , content);
+module.exports =  PostContent;
