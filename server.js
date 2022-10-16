@@ -2,8 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const contents = require('./routes/content');
-const allContents =  require('./routes/allContents');
-const communities = require('./routes/community')
+
+const communities = require('./routes/community');
+const address = require('./routes/auth/userAddress')
 const app = express();
 require('dotenv').config();
 
@@ -19,8 +20,9 @@ app.use(express.json());
 
 //use apis 
 app.use('/api', contents);
-app.use('/api', allContents );
-app.use('/api' , communities)
+
+app.use('/api' , communities);
+app.use('/api', address);
 //get all users
 
 

@@ -14,7 +14,11 @@ const schema = new  mongoose.Schema({
     },
 
     status : {
-        type: Boolean
+        type: Boolean,
+        required: [true, 'There must be a status']
+    },
+    image: {
+        type: String,
     }
 
 

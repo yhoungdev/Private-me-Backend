@@ -7,6 +7,7 @@ const content = new schema({
         type: String,
         required: [ true , 'required']
     },
+    voice: String,
     fileUrl: String,
     
 });

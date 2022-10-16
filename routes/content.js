@@ -16,4 +16,15 @@ router.post('/post' , async ( req , res ) => {
 
 });
 
+
+//get all contents data 
+router.get('/post' , ( req , res ) => {
+   postContent.find({} , ( err, data ) => {
+      if(err) {
+         res.send(err)
+      } else {
+         res.send(data)
+      }
+   })
+})
 module.exports = router
