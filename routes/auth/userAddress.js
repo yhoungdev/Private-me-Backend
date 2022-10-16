@@ -13,4 +13,16 @@ router.post('/auth/address' , ( req , res ) => {
     })
 })
 
+
+//get endpoint
+
+router.get('/auth/address' , (req , res ) => {
+    address.find({} , (err , response ) => {
+        if(!err) {
+            res.send(response)
+        } else {
+            res.send(err)
+        }
+    })
+})
 module.exports = router;
